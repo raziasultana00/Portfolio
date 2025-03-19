@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>MY Portfolio</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		<style>
+			body{
+				background-color: #000a1a;
+			}
+				/* Navbar Start */
+			nav{
+				background-color: #11001a;
+			}	
+			.nav-link{
+				color: #fff;
+			}
+			.link:hover{
+				background-color: rgb(64 64 64);
+				border-bottom: 3px solid #8b25b0;
+			}
+			.navbar button{
+				color: #8b25b0;
+				background-color: #fff;
+			}
+			.btn-outline-dark{
+				color: #8b25b0 !important;
+				font-size: 20px;
+				border: 2px solid #8b25b0;
+				}
+			.btn-outline-dark:hover{
+				background-color: #8b25b0;
+				color: #fff !important;
+			}
+			.navbar-nav .nav-link.active{
+				color: #8b25b0;
+				font-weight: 900;
+			}
+			.nav-link:focus, .nav-link:hover {
+				color: #fff;
+			}
+				/* Navbar End */
+
+				/* Home Start */
+			.image img:hover{
+				box-shadow: 2px 2px 2px 8px #8b25b0;
+			}
+			.image:hover{
+				padding-right: 20px;
+				padding-bottom: 2px;
+			}
+			.name{
+				font-size: 60px;
+			}
+			.name:hover{
+				color: #8b25b0;
+			}
+			.icon{
+				color: #8b25b0;
+				border: 1px solid #8b25b0;
+				border-radius: 50%
+			}
+			.icon:hover{
+				color: #fff !important;
+				background-color: #8b25b0;
+			}
+			.icon-box i{
+				color: #9c27b0;
+				border: 1px solid #8b25b0;
+				border-radius: 50%
+			}
+			.icon-box i:hover{
+				color: #fff !important;
+				background-color: #8b25b0;
+			}
+			.icon h2:hover{
+				color: #8b25b0;
+			}
+				/* Home End */
+
+				/* Skills Start */
+			.skill-content{
+				filter: grayscale(85%);
+				opacity: 80%;
+				background-color: #3c3c5d;
+			}
+			.skill-content:hover{
+				color: #8b25b0 !important;
+				opacity: 100%;
+				padding: 10px;
+				filter: grayscale(1%);
+				background-color: #11001a;
+				border: 2px solid #8b25b0;
+			}
+			.skill{
+				padding-top: 120px;
+			}
+			.skill:hover{
+				color: #8b25b0;
+			}
+				/* Skills End */
+
+				/* Projects Start */
+			.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+			    color: #fff;
+			    background-color: #8b25b0;
+			} 
+			.projects a{
+				color: #fff;
+			}
+			.projects{
+				background-color: #000a1a;
+				color: #fff;
+			}
+			.btn-dark{
+				background-color: #8b25b0;
+				font-size: 18px;
+			}
+			.btn-dark:hover{
+				background-color: #000a1a;
+				border: 2px solid #8b25b0;
+				color: #8b25b0 !important;
+			}
+				/* Projects End */
+
+				/* Service Start */
+			.service{
+				background-color: #000a1a;
+				border: 3px solid #11001a;
+				color: white;
+			}
+			.service:hover{
+				border: 2px solid #8b25b0;
+				background-color: #11001a;
+				cursor: pointer;
+				font-size: 18px;
+				color: #9c27b0 !important;
+			}
+				/* Service End */
+
+				/* Blogs Start */
+			.blog-card{
+				color: #fff;
+				background-color: #000a1a;
+			}
+			.blog-card:hover{
+				border: 2px solid #8b25b0;
+				background-color: #11001a;
+				cursor: pointer;
+			}
+			.modal-body h2:hover{
+				color: #8b25b0;
+			}
+				/* Blogs End */
+
+				/* About Start */
+			.about{
+				background-color:  #000a1a;
+			}
+			.hovers:hover{
+				color: #8b25b0;
+			}
+				/* About End */
+		</style>
+	</head>
+	<body>
+			<!--Navbae Start-->
+		<nav class="navbar navbar-expand-lg p-0 fixed-top">
+			<div class="container">
+				<a class="navbar-brand fw-bolder" href="https://www.linkedin.com/in/razia-sultana-68a8b7337/" target="_blank"><img src="images/name-logo.jpg" class="bg-none" style="width: 4rem; height: 4rem;" alt="name-logo" /></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse show" id="navbarSupportedContent">
+				  	<ul class="navbar-nav gap-2 text-uppercase  mx-auto  mb-lg-0">
+						<li class="nav-item">
+						  <a class="nav-link active" aria-current="page" href="#home-part">Home</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link link" href="#skills-part">Experties</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link link" href="#project-part">Projects</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link link" href="#about-part">About</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link link" href="#service-part">Services</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link link" href="#blog-part">Blogs</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="btn btn-outline-dark fw-bolder rounded-5 px-4 me-3" href="mailto:raziasultana2742004@gmail.com" target="_blank">Hire Me</a>
+						</li>
+					</ul>
+				</div>
+		 	</div>
+		</nav>
+			<!--Navber End-->
+
+			<!-- Home Start -->
+		<div class="container my-5 pt-4 text-md-start text-center text-light" id="home-part">
+			<div class="row align-items-center justify-content-center" style="height: 100vh;">
+				<div class="col-lg-7 col-md-12">
+					<h3>Hi! I am</h3>
+					<h1 class="fw-bolder name py-2">Razia  Sultana</h1>
+					<h3 class="">Web Developer & Web Designer</h3>
+					<div class="pt-5 mb-0 pb-3">
+						<!-- <h2 class="pb-3">Social Accounts</h2> -->
+						<a class="text-decoration-none text-light" href="mailto:raziasultana2742004@gmail.com" target="_blank" title="Email">
+							<i class="bi bi-envelope-fill icon fs-4 m-2 p-2"></i>
+						</a>
+						<a class="text-decoration-none
+						text-light" href="https://www.linkedin.com/in/razia-sultana-68a8b7337/" target="_blank" title="Linkedin">
+							<i href="#" target="_blank" class="bi bi-linkedin icon fs-4 m-2 p-2"></i>
+						</a>
+						<a class="text-decoration-none text-light" href="https://x.com/raziasultana00" target="_blank" title="X">
+							<i class="bi bi-twitter-x icon fs-4 m-2 p-2"></i>
+						</a>
+						<a class="text-decoration-none text-light" href="https://instagram.com/raziasultana9225" target="_blank" title="Instagram">
+							<i class="bi bi-instagram icon fs-4 m-2 p-2"></i>
+						</a>
+						<a class="text-decoration-none text-light" href="https://github.com/raziasultana00" target="_blank" title="Github">
+							<i class="bi bi-github icon fs-4 m-2 p-2"></i>
+						</a>
+					</div>
+					<div class="py-4">
+						<a class="btn btn-outline-dark fw-bolder rounded-5 px-4 me-3" href="https://drive.google.com/file/d/1fB8Q6v6jUwJee_AnuNthxp0W2dRoJOq4/view" target="_blank">Resume</a>
+						<a class="btn btn-outline-dark fw-bolder rounded-5 px-4 me-3" href="mailto:raziasultana2742004@gmail.com" target="_blank">Contact Me</a>
+					</div>
+				</div>
+				<div class="col-lg-5 col-sm-12 text-center">
+					<div class="image">
+						<img src="images/sultana.jpg" alt="Sultana" class="img-fluid rounded-circle" style="
+						 height: 20rem; width: 20rem;">
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- Home End -->
+
+			<!-- Skill Start -->
+		<div class="container mt-5 pt-5" id="skills-part">
+			<div class="text-center text-light">
+				<p class="fs-1 skill fw-bolder">MY SKILLS</p>
+				<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+				<!-- Here's some set of skills of my work basis. I used updated tools and methods to get the job done perfectly. -->
+				<h5 class="">Here's some set of skills of my work basis. I used updated tools and methods to get the job done perfectly. Modern Technology and terminology is applied through all this platforms.</h5>
+			</div>
+		</div>
+		<div class="container py-5">
+			<div class="row text-light text-center">
+				<div class="col-lg-2 mb-3">
+					<div class="skill-content p-3">
+						<img src="images/html.jpg" class="skill-img" title="HTML" style="border: 3px solid orangered; width: 90px;
+						height: 90px;" title="HTML" alt="html">
+						<h3 class="pt-3">HTML</h3>
+					</div>
+				</div>
+				<div class="col-lg-2 mb-3">
+					<div class="skill-content p-3">
+						<img src="images/css.jpg" class="skill-img" title="CSS" style="border: 3px solid darkcyan; width: 90px; height: 90px;" title="CSS" alt="css">
+						<h3 class="pt-3">CSS</h3>
+					</div>
+				</div>
+				<div class="col-lg-2 mb-3">
+					<div class="skill-content p-3">
+						<img src="images/bootstrap.jpg" class="skill-img" title="Bootstrap" style="border: 3px solid blueviolet; width: 90px; height: 90px;" title="Bootstrap" alt="client-5">
+						<h3 class="pt-3">Bootstrap</h3>
+					</div>
+				</div>
+				<div class="col-lg-2 mb-3">
+					<div class="skill-content p-3">
+						<img src="images/javascript-2.jpg" class="skill-img" title="JavaScript" style="border: 3px solid slateblue; width: 90px; height: 90px;" title="JavaScript" alt="javascript">
+						<h3 class="pt-3">JavaScript</h3>
+					</div>
+				</div>
+				<div class="col-lg-2 mb-3">
+					<div class="skill-content p-3">
+						<img src="images/wordpress.png" class="skill-img" title="WordPress" style="border: 3px solid darkcyan; width: 90px;height: 90px;" title="WordPress" alt="wordpress">
+						<h3 class="pt-3">WordPress</h3>
+					</div>
+				</div>
+				<div class="col-lg-2 mb-3">
+					<div class="skill-content p-3">
+						<img src="images/canva.png" class="skill-img" style="border: 3px solid royalblue; width: 90px; height: 90px;" title="Canva" alt="canva">
+						<h3 class="pt-3">Canva</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- Skill End -->
+
+			<!-- Project Start -->
+		<div class="container" id="project-part">
+			<div class="text-center text-light">
+				<p class="fs-1 skill m-0 fw-bolder">My PROJECTS</p>
+				<h6 class="m-0 pb-2 text-light">Creating is always attractive and I tried to never deprive myself of this pleasure, here you can see the projects published by me.</h6>
+			</div>
+
+			
+			<div class="row text-light">
+				<!-- <h1>A small selection of recent projects</h1> -->
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="card projects blog-card mb-2">
+						<div class="card-body">
+							<img src="images/home-page.jpeg" style="height: 8rem;" class="w-100 pb-2" alt="Industry-Website"/>
+							<h6 class="m-0 fw-bolder">Industry Website</h6>
+							<p class="m-0 pb-2">Technologies: HTML CSS Bootstrap</p>
+							<a class="btn btn-dark stext-decoration-none fs-6 fw-bolder" href="https://raziasultana00.github.io/Industry-Website/">Check Live Site<i class="bi bi-arrow-up-right ps-2"></i></a>
+						</div>
+					</div>
+
+					<div class="card projects blog-card mb-2">
+						<div class="card-body">
+							<img src="images/furniture-design
+							.jpg" style="height: 8rem;" class="w-100 pb-2" alt="furniture-design"/>
+							<h6 class="m-0 fw-bolder">Ecommerce Website</h6>
+							<p class="m-0 pb-2">Technologies: HTML CSS</p>
+							<a class="btn btn-dark text-decoration-none fs-6 fw-bolder" href="https://raziasultana00.github.io/Ecommerce-Website/">Check Live Site<i class="bi bi-arrow-up-right ps-2"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="card projects blog-card mb-2">
+						<div class="card-body">
+							<img src="images/gokiiw.jpg" style="height: 8rem;" class="w-100 pb-2" alt="GoKiiw"/>
+							<h6 class="m-0"> Website</h6>
+							<p class="m-0 pb-2">Technologies: HTML CSS</p>
+							<a class="btn btn-dark text-decoration-none fs-6 fw-bolder" href="https://raziasultana00.github.io/GoKiiw/">Check Live Site<i class="bi bi-arrow-up-right ps-2"></i></a>
+						</div>
+					</div>
+
+					<div class="card projects blog-card mb-2">
+						<div class="card-body">
+							<img src="images/sailor.jpg" style="height: 8rem;" class="w-100 pb-2" alt="Sailor"/>
+							<h6 class="m-0 fw-bolder">Landing Page</h6>
+							<p class="m-0 pb-2">Technologies: HTML CSS Bootstrap</p>
+							<a class="btn btn-dark text-decoration-none fs-6 fw-bolder" href="https://raziasultana00.github.io/Landing-Page/">Check Live Site<i class="bi bi-arrow-up-right ps-2"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="card projects blog-card mb-2">
+						<div class="card-body">
+							<img src="images/blog-home.jpeg" style="height: 8rem;" class="w-100 pb-2" alt="Blogs"/>
+							<h6 class="m-0">Blog Website</h6>
+							<p class="m-0 pb-2">Technologies: HTML CSS</p>
+							<a class="btn btn-dark text-decoration-none fs-6 fw-bolder" href="https://raziasultana00.github.io/Blog-Website/">Check Live Site<i class="bi bi-arrow-up-right ps-2"></i></a>
+						</div>
+					</div>
+
+					<div class="card projects blog-card mb-2">
+						<div class="card-body">
+							<img src="images/simple-portfolio.jpeg" style="height: 8rem;" class="w-100 pb-2" alt="Simple-Portfolio"/>
+							<h6 class="m-0 fw-bolder">Simple Portfolio</h6>
+							<p class="m-0 pb-2">Technologies: HTML CSS Bootstrap</p>
+							<a class="btn btn-dark text-decoration-none fs-6 fw-bolder" href="https://raziasultana00.github.io/Simple-Portfolio/">Check Live Site<i class="bi bi-arrow-up-right ps-2"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="card projects blog-card mb-2">
+						<div class="card-body">
+							<img src="images/Portfolio.jpg" style="height: 8rem;" class="w-100 pb-2" alt="Portfolio"/>
+							<h6 class="m-0 fw-bolder">My Portfolio</h6>
+							<p class="m-0 py-2" style="font-size: 15px;">Technologies: HTML Bootstrap JavaScript</p>
+							<a class="btn btn-dark text-decoration-none fs-6 fw-bolder" href="https://raziasultana00.github.io/My-Portfolio/">Check Live Site<i class="bi bi-arrow-up-right ps-2"></i></a>
+						</div>
+					</div>
+
+					<div class="card projects blog-card mb-2">
+						<div class="card-body">
+							<img src="images/survey-form.jpeg" style="height: 8rem;" class="w-100 pb-2" alt="survey-form"/>
+							<h6 class="m-0 fw-bolder">Online Survey Form</h6>
+							<p class="m-0 pb-2">Technologies: HTML CSS</p>
+							<a class="btn btn-dark text-decoration-none fs-6 fw-bolder" href="https://raziasultana00.github.io/Online-Survey-Form/">Check Live Site<i class="bi bi-arrow-up-right ps-2"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- Project End -->
+
+			<!-- About Start -->
+		<div class="container pt-5 text-light" id="about-part">
+			<p class="text-center skill m-0 fw-bolder" style="font-size: 45px;">About Me</p>
+			<div class="row">
+				<div class="col-lg-8 pt-4">
+					<div class="card text-light about">
+						<div class="card-body">
+							<p class="fs-4"><i>Hi, and welcome to my portfolio website!</i></p>
+							<p class="fs-5"><i>I'm Razia Sultana, a Web Developer & WordPress Expert with 2 years of experience in creating modern, responsive, and high-performing websites. I am very passionate about programming. I am a dedicated, reliable, and hardworking individual who is always eager to learn and improve my skills.</i></p>
+							<p class="fs-5"><i>With a strong foundation in coding, I have honed my ability to tackle complex challenges and deliver high-quality results. I am a team player, friendly, and always ready to assist others. My problem-solving approach is both strategic and efficient, allowing me to create seamless and responsive web experiences.</i></p>
+							<p class="fs-5"><i>I am always open to new opportunities where I can apply my expertise and continue growing as a developer. Let's build something amazing together!
+							</i></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 pt-4">
+					<div class="image">
+						<img class="img-fluid rounded-circle" style="height: 25rem; width: 23rem;" src="images/ripa.png" title="Razia Sultana" alt="Razia">
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- About End -->
+
+			<!-- Service Start -->
+		<div class="container mt-5" id="service-part">
+			<div class="text-center text-light">
+				<p class="fs-1 skill fw-bolder">My Quality Services</p>
+				<p class="fs-5">Experienced & skilled working with HTML5, CSS3, bootstrap4, JavaScript and multiple elements related with responsive front-end development.</p>
+		    </div>
+	        <div class="row pt-5">
+				<div class="col-lg-4 col-md-6">
+					<div class="card service mb-3">
+						<div class="card-body">
+							<div class="d-flex">
+								<div class="service-icon">
+									<i class="bi bi-laptop h1 p-3"></i>
+								</div>
+								<div>
+									<h3>Web Designer</h3>
+									<p class="text-light">Crafting visually appealing and user-centric web designs tailored to meet your brand's identity and user experience goals.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="card service mb-3">
+						<div class="card-body">
+							<div class="d-flex">
+								<div class="service-icon">
+									<i class="bi bi-bar-chart-steps h1 p-3"></i>
+								</div>
+								<div>
+									<h3>Responsive Design</h3>
+									<p class="text-light">Less Effort.
+									Smooth User Experience. User Friendly website. Mobile Segment. Search Engine
+									Optimization (SEO) .</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="card service mb-3">
+						<div class="card-body">
+							<div class="d-flex">
+								<div class="service-icon">
+									<i class="bi bi-sliders h1 p-3"></i>
+								</div>
+								<div>
+									<h3>Fast Support</h3>
+									<p class="text-light">I am available except from 12 PM to 8 PM (GMT +6) Bangladesh time. Services can be provided 7 days in a week.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="card service mb-3">
+						<div class="card-body">
+							<div class="d-flex">
+								<div class="service-icon">
+									<i class="bi bi-image h1 p-3"></i>
+								</div>
+								<div>
+									<h3>Clean Code</h3>
+									<p class="text-light">Understandable and readable code, Always following updated structure, simple and focused.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="card service mb-3">
+						<div class="card-body">
+							<div class="d-flex">
+								<div class="service-icon">
+									<i class="bi bi-globe-americas h1 p-3"></i>
+								</div>
+								<div>
+									<h3>Creative Look</h3>
+									<p class="text-light">Accessible to All Users. Well Planned Information Architecture. Fast Load Times. Effective Navigation.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6">
+					<div class="card service mb-3">
+						<div class="card-body">
+							<div class="d-flex">
+								<div class="service-icon">
+									<i class="bi bi-list-task h1 p-3"></i>
+								</div>
+								<div>
+									<h4>Branding Identity</h4>
+									<p class="text-light"> Well-Formatted content that is easy to scan, Contrasting color cheme which make your brand unique and desired.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+	    </div>
+			<!-- Service End -->
+
+			<!-- Blog Start -->
+		<div class="container pb-5 text-light" id="blog-part">
+			<div class="row">
+				<p class="fs-1 text-center skill fw-bolder">BLOGS</p>
+				<div class="col-lg-4">
+					<div class="card blog-card">
+						<div class="card-body">
+							<img src="images/blog.jpg" class="pb-3 w-100" style="height: 17rem;" alt="Front-End-Developers"/>
+							<p class="fs-4 fw-bolder">Tips for Front-End Developers: How to Improve Your Workflow</p>
+						
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#Read-More-1">
+							  Read More
+							</button>
+
+							<!-- Modal -->
+							<div class="modal fade" id="Read-More-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+							  	<div class="modal-dialog modal-fullscreen" style="background: #000a1a;">
+							    	<div class="modal-content" style="background: #000a1a;">
+										<div class="modal-header" style="background: #11001a;">
+											<div class="container d-flex modal-title">
+												<h1 class="" id="staticBackdropLabel"><a class="text-decoration-none text-light" href="#blog-part">Blogs/</a></h1>
+												<h1 class=""><a class="text-decoration-none" href="#home-part" style="color: #8b25b0;">Home</a> </h1>
+												<button type="button" class="btn-close p-2 mt-2 bg-body-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+										</div>
+										<div class="modal-body container">
+											<div class="py-3">
+												<h2>Description:</h2>
+												<p class="fs-4">Improving your skills as a front-end developer requires effective tools and strategies. In this blog, I’ll share how you can improve your workflow using tools like VSCode, React, Sublime Text, and others. I’ll provide tips on code editing, debugging, and enhancing user interfaces.</p>
+											</div>
+											<div class="py-2">
+												<h2 class="">Tech Stack:</h2>
+												<ul class="fs-4 pt-2 gap-2">
+													<li><b>VSCode:</b> Improve your coding experience with pre-built extensions</li>
+													<li><b>React:</b> A modern library for building user interfaces, which is used for fast coding and state management.</li>
+													<li><b>Sublime Text:</b> A lightweight and fast code editor, perfect for quick coding.</li>
+													<li><b>Notepad++:</b> Notepad++ is a popular open-source code editor for Windows. It is lightweight, fast, and supports multiple programming languages.</li>
+												</ul>
+											</div>
+										</div>
+										<div class="modal-footer" style="background: #11001a;">
+											<button type="button" class="btn btn-dark me-5 px-3 fs-5 py-2" data-bs-dismiss="modal">Close</button>
+										</div>
+							    	</div>
+							  	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="card blog-card">
+						<div class="card-body">
+							<div class="pb-3">
+								<img src="images/responsive-design.jpeg" class="w-100" style="height: 17rem;" alt="Responsive-Design"/>
+							</div>
+							<div class="">
+								<h3>The Importance of Responsive Design in 2025</h3>
+							</div>
+							<div class="py-2">
+								<!-- Button trigger modal -->
+								<button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#Read-More-2">
+								  Read More
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="Read-More-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+								  	<div class="modal-dialog modal-fullscreen" style="background: #000a1a;">
+								    	<div class="modal-content" style="background: #000a1a;">
+											<div class="modal-header" style="background: #11001a;">
+												<div class="container d-flex modal-title">
+													<h1 class="" id="staticBackdropLabel"><a class="text-decoration-none text-light" href="#blog-part">Blogs/</a></h1>
+													<h1 class=""><a class="text-decoration-none" href="#home-part" style="color: #8b25b0;">Home</a> </h1>
+												
+													<button type="button" class="btn-close p-2 mt-2 bg-body-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+											</div>
+											<div class="modal-body container">
+												<div class="py-2">
+													<h2 class="">Description:</h2>
+													<p class="fs-4">Responsive design is the standard in web development for 2025, ensuring websites work across mobile, tablet, and desktop screens. In this blog, I’ll explain why responsive design is important and how you can ensure your website adapts to various screen sizes. I’ll give tips for creating responsive design using React, CSS, and Bootstrap.</p>
+												</div>
+												<div class="py-2">
+													<h2 class="">Tools and Libraries:</h2>
+													<ul class="fs-4">
+														<li><b>VSCode and Sublime Text:</b> Use these editors for coding and live preview of your website.</li>
+														<li><b>React:</b> React makes it easier and faster to build responsive design with its CSS styling.</li>
+														<li><b>Bootstrap:</b> You can quickly build responsive layouts using Bootstrap’s grid system, which ensures a beautiful design on any device.</li>
+													</ul>
+												</div>
+												<div class="py-2">
+													<h3 class="py-2 fw-bolder">Bootstrap Example:</h3>
+													<img style="width: 40rem;" src="images/responsive-code.jpeg">
+												</div>
+												<div class="py-2">
+													<h2>Explanation:</h2>
+													<ul class="fs-4">
+														<li>Grid System: The Bootstrap grid system makes it easy to create flexible, responsive layouts. Here, col-md-4 divides the columns into 4 parts, while col-sm-12 makes them full-width on smaller screens.</li>
+														<li>Media Queries: Bootstrap automatically adapts the layout to different screen sizes.</li>
+													</ul>
+												</div>
+											</div>
+											<div class="modal-footer" style="background: #11001a;">
+												<button type="button" class="btn btn-dark me-5 px-3 py-2 fs-5" data-bs-dismiss="modal">Close</button>
+											</div>
+								    	</div>
+								  	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="card blog-card">
+						<div class="card-body">
+							<div class="pb-3">
+								<img src="images/portfolio.jpeg" class="w-100" style="height: 17rem;" alt="Portfolio-Website" />
+							</div>
+							<div class="">
+								<h3>How to Build a Portfolio Website from Scratch</h3>
+							</div>
+							<div class="py-2">
+								<!-- Button trigger modal -->
+								<button type="button" class="btn btn-dark my-2" data-bs-toggle="modal" data-bs-target="#Read-More-3">
+								  Read More
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="Read-More-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+								  	<div class="modal-dialog modal-fullscreen" style="background: #000a1a;">
+									    <div class="modal-content" style="background: #000a1a;">
+											<div class="modal-header" style="background: #11001a;">
+												<div class="container d-flex modal-title">
+													<h1 class="" id="staticBackdropLabel"><a class="text-decoration-none text-light" href="#blog-part">Blogs/</a></h1>
+													<h1 class=""><a class="text-decoration-none" href="#home-part" style="color: #8b25b0;">Home</a> </h1>
+												
+													<button type="button" class="btn-close p-2 mt-2 bg-body-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+											</div>
+											<div class="modal-body container">
+												<div class="my-2">
+													<h2>Description:</h2>
+													<p class="fs-4">Building a portfolio website is an essential step that allows you to showcase your work and skills. In this blog, I’ll share how you can easily create your portfolio website using HTML, CSS, and JavaScript. I’ll provide a step-by-step guide and some tips that will help you create an attractive and professional website.</p>
+												</div>
+												<div class="my-2">
+													<h2>Tech Stack:</h2>
+													<ul class="fs-4">
+														<li><b>VSCode and Sublime Text:</b> Powerful code editors that you can use to build your portfolio site.</li>
+														<li><b>React:</b> If you want to build modern web applications, React is a great choice.</li>
+														<li><h4 class="fw-bolder pb-2">Code Snippet:</h4>
+														<img class="py-2" src="images/portfolio-code.jpeg"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="modal-footer" style="background: #11001a;">
+												<button type="button" class="btn btn-dark fs-5 me-5 px- py-2" data-bs-dismiss="modal">Close</button>
+											</div>
+									    </div>
+								  	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- Blog End -->
+
+			<!-- Footer Start -->
+		<footer style="background: #11001a;">
+			<div class="container text-light">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<h1 class="hovers" style="font-size: 55px;">Have a Project?</h1>
+					</div>
+
+					<div class="col-lg-6 py-3">
+						<h1 class=" hovers">Contact with Me</h1>
+						    
+					    <div class="py-4">
+							<p class="fs-4">I am available for freelance work. Connect with me via E-mail and call in to my account.</p>
+							<p class="fs-4">E-mail : <a class="text-decoration-none" href="mailto:raziasultana2742004@gmail.com" target="_blank" style="color: #8b25b0;">raziasultana2742004@gmail.com</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="text-center" style="border-top: 2px solid rgb(64 64 64);">
+					<h6 class="py-3">© 2025 <a class="text-decoration-none
+					text-ligh" href="mailto:raziasultana2742004@gmail.com" target="_blank" style="color: #8b25b0;"> Razia Sultana</a>. All Rights Reserved.</h6>
+				</div>
+			</div>
+		</footer>
+			<!-- Footer End -->
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,156 @@
+body{
+	background-color: #000a1a;
+}
+	/* Navbar Start */
+nav{
+	background-color: #11001a;
+}	
+.nav-link{
+	color: #fff;
+}
+.link:hover{
+	background-color: rgb(64 64 64);
+	border-bottom: 3px solid #8b25b0;
+}
+.navbar button{
+	color: #8b25b0;
+	background-color: #fff;
+}
+.btn-outline-dark{
+	color: #8b25b0 !important;
+	font-size: 20px;
+	border: 2px solid #8b25b0;
+	}
+.btn-outline-dark:hover{
+	background-color: #8b25b0;
+	color: #fff !important;
+}
+.navbar-nav .nav-link.active{
+	color: #8b25b0;
+	font-weight: 900;
+}
+.nav-link:focus, .nav-link:hover {
+	color: #fff;
+}
+	/* Navbar End */
+
+	/* Home Start */
+.image img:hover{
+	box-shadow: 2px 2px 2px 8px #8b25b0;
+}
+.image:hover{
+	padding-right: 20px;
+	padding-bottom: 2px;
+}
+.name{
+	font-size: 60px;
+}
+.name:hover{
+	color: #8b25b0;
+}
+.icon{
+	color: #8b25b0;
+	border: 1px solid #8b25b0;
+	border-radius: 50%
+}
+.icon:hover{
+	color: #fff !important;
+	background-color: #8b25b0;
+}
+.icon-box i{
+	color: #9c27b0;
+	border: 1px solid #8b25b0;
+	border-radius: 50%
+}
+.icon-box i:hover{
+	color: #fff !important;
+	background-color: #8b25b0;
+}
+.icon h2:hover{
+	color: #8b25b0;
+}
+	/* Home End */
+
+	/* Skills Start */
+.skill-content{
+	filter: grayscale(85%);
+	opacity: 80%;
+	background-color: #3c3c5d;
+}
+.skill-content:hover{
+	color: #8b25b0 !important;
+	opacity: 100%;
+	padding: 10px;
+	filter: grayscale(1%);
+	background-color: #11001a;
+	border: 2px solid #8b25b0;
+}
+.skill{
+	padding-top: 120px;
+}
+.skill:hover{
+	color: #8b25b0;
+}
+	/* Skills End */
+
+	/* Projects Start */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #8b25b0;
+} 
+.projects a{
+	color: #fff;
+}
+.projects{
+	background-color: #000a1a;
+	color: #fff;
+}
+.btn-dark{
+	background-color: #8b25b0;
+	font-size: 18px;
+}
+.btn-dark:hover{
+	background-color: #000a1a;
+	border: 2px solid #8b25b0;
+	color: #8b25b0 !important;
+}
+	/* Projects End */
+
+	/* Service Start */
+.service{
+	background-color: #000a1a;
+	border: 3px solid #11001a;
+	color: white;
+}
+.service:hover{
+	border: 2px solid #8b25b0;
+	background-color: #11001a;
+	cursor: pointer;
+	font-size: 18px;
+	color: #9c27b0 !important;
+}
+	/* Service End */
+
+	/* Blogs Start */
+.blog-card{
+	color: #fff;
+	background-color: #000a1a;
+}
+.blog-card:hover{
+	border: 2px solid #8b25b0;
+	background-color: #11001a;
+	cursor: pointer;
+}
+.modal-body h2:hover{
+	color: #8b25b0;
+}
+	/* Blogs End */
+
+	/* About Start */
+.about{
+	background-color:  #000a1a;
+}
+.hovers:hover{
+	color: #8b25b0;
+}
+	/* About End */
